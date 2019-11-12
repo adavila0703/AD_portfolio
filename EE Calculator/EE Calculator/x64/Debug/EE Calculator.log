@@ -1,0 +1,5 @@
+﻿  EE Calculator.cpp
+c:\users\angel\desktop\ad example code\ee calculator\ee calculator\ee calculator.cpp(50): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\angel\desktop\ad example code\ee calculator\ee calculator\ee calculator.cpp(38): warning C4101: 'e': unreferenced local variable
+c:\users\angel\desktop\ad example code\ee calculator\ee calculator\ee calculator.cpp(125): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  EE Calculator.vcxproj -> C:\Users\Angel\Desktop\AD Example Code\EE Calculator\x64\Debug\EE Calculator.exe

@@ -1,0 +1,6 @@
+﻿  doorGame.cpp
+c:\users\angel\desktop\test\consoleapplication1\doorgame.cpp(19): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+c:\users\angel\desktop\test\consoleapplication1\doorgame.cpp(30): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+c:\users\angel\desktop\test\consoleapplication1\doorgame.cpp(37): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+c:\users\angel\desktop\test\consoleapplication1\doorgame.cpp(82): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  ConsoleApplication1.vcxproj -> C:\Users\Angel\Desktop\test\Debug\ConsoleApplication1.exe
