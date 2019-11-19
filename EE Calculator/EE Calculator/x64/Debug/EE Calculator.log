@@ -1,5 +1,7 @@
 ﻿  EE Calculator.cpp
-c:\users\angel\desktop\ad example code\ee calculator\ee calculator\ee calculator.cpp(50): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-c:\users\angel\desktop\ad example code\ee calculator\ee calculator\ee calculator.cpp(38): warning C4101: 'e': unreferenced local variable
-c:\users\angel\desktop\ad example code\ee calculator\ee calculator\ee calculator.cpp(125): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-  EE Calculator.vcxproj -> C:\Users\Angel\Desktop\AD Example Code\EE Calculator\x64\Debug\EE Calculator.exe
+c:\users\angel\documents\unreal projects\ad_portfolio\ee calculator\ee calculator\ee calculator.cpp(42): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\angel\documents\unreal projects\ad_portfolio\ee calculator\ee calculator\ee calculator.cpp(31): warning C4101: 'e': unreferenced local variable
+c:\users\angel\documents\unreal projects\ad_portfolio\ee calculator\ee calculator\ee calculator.cpp(126): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\angel\documents\unreal projects\ad_portfolio\ee calculator\ee calculator\ee calculator.cpp(152): warning C4552: '-': result of expression not used
+c:\users\angel\documents\unreal projects\ad_portfolio\ee calculator\ee calculator\ee calculator.cpp(170): warning C4060: switch statement contains no 'case' or 'default' labels
+  EE Calculator.vcxproj -> C:\Users\Angel\Documents\Unreal Projects\AD_portfolio\EE Calculator\x64\Debug\EE Calculator.exe
