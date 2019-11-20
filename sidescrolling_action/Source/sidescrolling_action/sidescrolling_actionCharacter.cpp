@@ -10,13 +10,13 @@
 #include <EngineGlobals.h>
 #include <Runtime/Engine/Classes/Engine/Engine.h>
 #include <GameFramework/Actor.h>
-
+#include "GameFramework/Actor.h"
 
 #define print(text) if (GEngine) GEngine->AddOnScreenDebugMessage(-1, 1.5, FColor::Red, TEXT(text))
 
 Asidescrolling_actionCharacter::Asidescrolling_actionCharacter()
 {
-	
+
 	// Set size for collision capsule
 	GetCapsuleComponent()->InitCapsuleSize(42.f, 96.0f);
 
@@ -64,12 +64,9 @@ void Asidescrolling_actionCharacter::SetupPlayerInputComponent(class UInputCompo
 	PlayerInputComponent->BindAction("Jump", IE_Released, this, &ACharacter::StopJumping);
 	*/
 
-	
-
 	PlayerInputComponent->BindAxis("MoveRight", this, &Asidescrolling_actionCharacter::MoveRight);
 	PlayerInputComponent->BindTouch(IE_Pressed, this, &Asidescrolling_actionCharacter::TouchStarted);
 	PlayerInputComponent->BindTouch(IE_Released, this, &Asidescrolling_actionCharacter::TouchStopped);
-	PlayerInputComponent->BindAction("ActionTest", IE_Pressed, this, &Asidescrolling_actionCharacter::testing);
 	PlayerInputComponent->BindAction("Jump", IE_Pressed, this, &Asidescrolling_actionCharacter::actualjump);
 }
 
@@ -84,33 +81,19 @@ void Asidescrolling_actionCharacter::TouchStarted(const ETouchIndex::Type Finger
 }
 
 void Asidescrolling_actionCharacter::TouchStopped(const ETouchIndex::Type FingerIndex, const FVector Location)
-{
-	
+{	
 	StopJumping();
 }
 
-void Asidescrolling_actionCharacter::testing()
+void Asidescrolling_actionCharacter::doublejump()
 {
-	print("hello!!");
+	GetCharacterMovement()->AddImpulse(GetCapsuleComponent()->GetUpVector() * 500, true);
 }
-
 void Asidescrolling_actionCharacter::actualjump()
 {
-	bool doublejump = false;
-	//The double jump - first using UE4's jump, then condition to see if the character is walking and eligible to jump again.
-		Jump();
-	if (doublejump == false)
-	{
-		GetCharacterMovement()->AddImpulse(GetCapsuleComponent()->GetUpVector() * 1000, true);
-		doublejump = true;
-		for (int i = 0; i >= 5; i++)
-		{
-			if (GetCharacterMovement()->IsWalking() == true)
-			{
-				doublejump = false;
-				print("check");
-			}
-		}
-	}
+	Jump();
 }
 
+void Asidescrolling_actionCharacter::Tick(float a) {
+
+}

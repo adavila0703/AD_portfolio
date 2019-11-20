@@ -1,13 +1,13 @@
-C:\Users\Angel\Documents\Unreal Projects\AD_samplegame_UE4\sidescrolling_action\Intermediate\Build\Win64\UE4Editor\Development\sidescrolling_action\Definitions.sidescrolling_action.h
-c:\users\angel\documents\unreal projects\ad_samplegame_ue4\sidescrolling_action\source\sidescrolling_action\sidescrolling_actionGameMode.h
+C:\Users\adavila11\Documents\GitHub\AD_portfolio\sidescrolling_action\Intermediate\Build\Win64\UE4Editor\Development\sidescrolling_action\Definitions.sidescrolling_action.h
+c:\users\adavila11\documents\github\ad_portfolio\sidescrolling_action\source\sidescrolling_action\sidescrolling_actionGameMode.h
 C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Engine\Classes\GameFramework/GameModeBase.h
 C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Engine\Classes\Engine/ServerStatReplicator.h
 C:\Program Files\Epic Games\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\ServerStatReplicator.generated.h
 C:\Program Files\Epic Games\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\GameModeBase.generated.h
-C:\Users\Angel\Documents\Unreal Projects\AD_samplegame_UE4\sidescrolling_action\Intermediate\Build\Win64\UE4Editor\Inc\sidescrolling_action\sidescrolling_actionGameMode.generated.h
-c:\users\angel\documents\unreal projects\ad_samplegame_ue4\sidescrolling_action\source\sidescrolling_action\sidescrolling_actionCharacter.h
+C:\Users\adavila11\Documents\GitHub\AD_portfolio\sidescrolling_action\Intermediate\Build\Win64\UE4Editor\Inc\sidescrolling_action\sidescrolling_actionGameMode.generated.h
+c:\users\adavila11\documents\github\ad_portfolio\sidescrolling_action\source\sidescrolling_action\sidescrolling_actionCharacter.h
 C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Engine\Classes\GameFramework/Character.h
 C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Engine\Classes\GameFramework/RootMotionSource.h
 C:\Program Files\Epic Games\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\RootMotionSource.generated.h
 C:\Program Files\Epic Games\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\Character.generated.h
-C:\Users\Angel\Documents\Unreal Projects\AD_samplegame_UE4\sidescrolling_action\Intermediate\Build\Win64\UE4Editor\Inc\sidescrolling_action\sidescrolling_actionCharacter.generated.h
+C:\Users\adavila11\Documents\GitHub\AD_portfolio\sidescrolling_action\Intermediate\Build\Win64\UE4Editor\Inc\sidescrolling_action\sidescrolling_actionCharacter.generated.h

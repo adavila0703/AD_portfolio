@@ -30,9 +30,11 @@ protected:
 	/** Handle touch stop event. */
 	void TouchStopped(const ETouchIndex::Type FingerIndex, const FVector Location);
 
-	void testing();
+	void doublejump();
 
 	void actualjump();
+
+	virtual void Tick(float DeltaSeconds) override;
 
 	// APawn interface
 	virtual void SetupPlayerInputComponent(class UInputComponent* InputComponent) override;
