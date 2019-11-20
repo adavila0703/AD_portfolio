@@ -85,13 +85,21 @@ void Asidescrolling_actionCharacter::TouchStopped(const ETouchIndex::Type Finger
 	StopJumping();
 }
 
-void Asidescrolling_actionCharacter::doublejump()
+void Asidescrolling_actionCharacter::addsecondjump()
 {
-	GetCharacterMovement()->AddImpulse(GetCapsuleComponent()->GetUpVector() * 500, true);
+	GetCharacterMovement()->AddImpulse(GetCapsuleComponent()->GetUpVector() * 1000, true);
 }
+
 void Asidescrolling_actionCharacter::actualjump()
 {
+	bool a = doublejump(a);
 	Jump();
+	if (doublejump(a) == false)
+	{
+		addsecondjump();
+		a = doublejump(true);
+		print("this is false");
+	}
 }
 
 void Asidescrolling_actionCharacter::Tick(float a) {

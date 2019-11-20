@@ -30,7 +30,14 @@ protected:
 	/** Handle touch stop event. */
 	void TouchStopped(const ETouchIndex::Type FingerIndex, const FVector Location);
 
-	void doublejump();
+	bool doublejump(bool hasjumped)
+	{
+		bool a;
+		a = hasjumped;
+		return a;
+	}
+
+	void addsecondjump();
 
 	void actualjump();
 
