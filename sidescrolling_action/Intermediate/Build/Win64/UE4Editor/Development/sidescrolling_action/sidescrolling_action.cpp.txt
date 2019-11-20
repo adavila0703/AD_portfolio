@@ -1,0 +1,2 @@
+C:\Users\Angel\Documents\Unreal Projects\AD_samplegame_UE4\sidescrolling_action\Intermediate\Build\Win64\UE4Editor\Development\sidescrolling_action\Definitions.sidescrolling_action.h
+c:\users\angel\documents\unreal projects\ad_samplegame_ue4\sidescrolling_action\source\sidescrolling_action\sidescrolling_action.h

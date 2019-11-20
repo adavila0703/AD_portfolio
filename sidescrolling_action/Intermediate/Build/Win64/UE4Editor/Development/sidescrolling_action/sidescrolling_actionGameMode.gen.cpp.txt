@@ -1,0 +1,9 @@
+C:\Users\Angel\Documents\Unreal Projects\AD_samplegame_UE4\sidescrolling_action\Intermediate\Build\Win64\UE4Editor\Development\sidescrolling_action\Definitions.sidescrolling_action.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\CoreUObject\Public\UObject/GeneratedCppIncludes.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\CoreUObject\Public\UObject/MetaData.h
+C:\Users\Angel\Documents\Unreal Projects\AD_samplegame_UE4\sidescrolling_action\Source\sidescrolling_action/sidescrolling_actionGameMode.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Engine\Classes\GameFramework/GameModeBase.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Engine\Classes\Engine/ServerStatReplicator.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\ServerStatReplicator.generated.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\GameModeBase.generated.h
+c:\users\angel\documents\unreal projects\ad_samplegame_ue4\sidescrolling_action\intermediate\build\win64\ue4editor\inc\sidescrolling_action\sidescrolling_actionGameMode.generated.h

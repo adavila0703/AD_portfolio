@@ -1,0 +1,20 @@
+﻿  Using 'git status' to determine working set for adaptive non-unity build (C:\Users\Angel\Documents\Unreal Projects\AD_samplegame_UE4).
+  Creating makefile for sidescrolling_actionEditor (ini files are newer than makefile)
+  Parsing headers for sidescrolling_actionEditor
+    Running UnrealHeaderTool "C:\Users\Angel\Documents\Unreal Projects\AD_samplegame_UE4\sidescrolling_action\sidescrolling_action.uproject" "C:\Users\Angel\Documents\Unreal Projects\AD_samplegame_UE4\sidescrolling_action\Intermediate\Build\Win64\sidescrolling_actionEditor\Development\sidescrolling_actionEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
+  Reflection code generated for sidescrolling_actionEditor in 7.8817923 seconds
+  Using Visual Studio 2017 14.16.27023 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023) and Windows 10.0.17763.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+  Building 4 actions with 4 processes...
+    [1/4] sidescrolling_actionCharacter.cpp
+C:\Users\Angel\Documents\Unreal Projects\AD_samplegame_UE4\sidescrolling_action\Source\sidescrolling_action\sidescrolling_actionCharacter.cpp(67): error C2143: syntax error: missing ')' before 'const'
+C:\Users\Angel\Documents\Unreal Projects\AD_samplegame_UE4\sidescrolling_action\Source\sidescrolling_action\sidescrolling_actionCharacter.cpp(67): error C2672: 'UInputComponent::BindKey': no matching overloaded function found
+C:\Users\Angel\Documents\Unreal Projects\AD_samplegame_UE4\sidescrolling_action\Source\sidescrolling_action\sidescrolling_actionCharacter.cpp(67): error C2780: 'FInputKeyBinding &UInputComponent::BindKey(const FKey,const EInputEvent,UserClass *,TBaseDelegate<void>::TUObjectMethodDelegate<UserClass>::FMethodPtr)': expects 4 arguments - 0 provided
+    C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Engine\Classes\Components/InputComponent.h(921): note: see declaration of 'UInputComponent::BindKey'
+C:\Users\Angel\Documents\Unreal Projects\AD_samplegame_UE4\sidescrolling_action\Source\sidescrolling_action\sidescrolling_actionCharacter.cpp(67): error C2780: 'FInputKeyBinding &UInputComponent::BindKey(const FInputChord,const EInputEvent,UserClass *,TBaseDelegate<void>::TUObjectMethodDelegate<UserClass>::FMethodPtr)': expects 4 arguments - 0 provided
+    C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Engine\Classes\Components/InputComponent.h(908): note: see declaration of 'UInputComponent::BindKey'
+C:\Users\Angel\Documents\Unreal Projects\AD_samplegame_UE4\sidescrolling_action\Source\sidescrolling_action\sidescrolling_actionCharacter.cpp(67): error C2143: syntax error: missing ';' before 'const'
+C:\Users\Angel\Documents\Unreal Projects\AD_samplegame_UE4\sidescrolling_action\Source\sidescrolling_action\sidescrolling_actionCharacter.cpp(67): error C2059: syntax error: 'this'
+C:\Users\Angel\Documents\Unreal Projects\AD_samplegame_UE4\sidescrolling_action\Source\sidescrolling_action\sidescrolling_actionCharacter.cpp(67): error C2059: syntax error: ')'
+C:\Users\Angel\Documents\Unreal Projects\AD_samplegame_UE4\sidescrolling_action\Source\sidescrolling_action\sidescrolling_actionCharacter.cpp(89): error C2039: 'testing': is not a member of 'Asidescrolling_actionCharacter'
+    c:\users\angel\documents\unreal projects\ad_samplegame_ue4\sidescrolling_action\source\sidescrolling_action\sidescrolling_actionCharacter.h(10): note: see declaration of 'Asidescrolling_actionCharacter'
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.MakeFile.Targets(44,5): error MSB3075: The command ""C:\Program Files\Epic Games\UE_4.22\Engine\Build\BatchFiles\Build.bat" sidescrolling_actionEditor Win64 Development -Project="C:\Users\Angel\Documents\Unreal Projects\AD_samplegame_UE4\sidescrolling_action\sidescrolling_action.uproject" -WaitMutex -FromMsBuild" exited with code 5. Please verify that you have sufficient rights to run this command.
