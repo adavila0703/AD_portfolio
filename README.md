@@ -1,27 +1,28 @@
-# AD_portfolio info
+﻿# AD_portfolio info
 Below you will find a list of the content inside this repository.
 
 # Side Scrolling Action
-Example of sprint/double jump mechanic.
+Here is my example of a sprint and double jump mechanic for a side-scroller in UE4. The foliage and character are free uassests from the UE4 marketplace.
+
 ![](pictures/sprint-doublejump.gif)
 
 # EE Calculator
 This small command prompt program is a house for all Electrical Engineering and physics formulas. You will be able to calculate everything from Ohm's law to complex nodal analysis on a circuit board.
 
-Below is a picture of current menu screen. Currently you can evaluate:
+Menu
 
 ![](pictures/EE%20menu.PNG)
 
+What you can currently evaluate.
+
   * Ohm's Law
-  
-![](pictures/ohms-law.PNG)
 
 The basics of Electrical Engineering, these simple equations can help you analyze just about anything once you understand all component concepts. But having a calculator for it is just plain cool.
 
-  * Capacitor 
-  
-  
-![](pictures/cap%20chargup.PNG)
+  * Capacitor Charge Up
+
+Calculates the amount of energy given to you by calculating voltage, resistance and capacitance of your capacitor.
+
 Still needs work on calculating voltage at a specific time, but when its done you will be able to calculate all voltage times with an array.
 
 # In progress for EE Calc.
