@@ -2,7 +2,8 @@
 Below you will find a list of the content inside this repository.
 
 # Side Scrolling Action
-Example of sprint/double jump mechanic.
+Below is my version of a sprint and double jump mechanic in a side-scroller in UE4, located in sidescrolling_actionCharacter.cpp. I also some foliage and a character from the free section of the UE4 marketplace.
+
 ![](pictures/sprint-doublejump.gif)
 
 # EE Calculator
@@ -14,15 +15,13 @@ Below is a picture of current menu screen. Currently you can evaluate:
 
   * Ohm's Law
   
-![](pictures/ohms-law.PNG)
-
 The basics of Electrical Engineering, these simple equations can help you analyze just about anything once you understand all component concepts. But having a calculator for it is just plain cool.
 
-  * Capacitor 
-  
-  
-![](pictures/cap%20chargup.PNG)
-Still needs work on calculating voltage at a specific time, but when its done you will be able to calculate all voltage times with an array.
+ * Capacitor Charge Up
+ 
+The capacitor charge up function allows you to input voltage, capacitance, resistance, and it will output your total energy used with the charge up time constant.
+
+This still needs work on calculating voltage at a specific time, but when its done you will be able to calculate all voltage times with an array.
 
 # In progress for EE Calc.
 
@@ -42,4 +41,4 @@ This is a fun little game where you have to choose a door, fight enemies and try
 
 
 # Angels Course Project
-For one of my CS course projects, I started working on an inventory system that allows you to only login if your currently have an account. This reads and writes data, but object oriented area needs work.
+For one of my CS course projects, I started working on an inventory system with an account registering and login system, which demonstrates reading and writing data.
