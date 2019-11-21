@@ -22,15 +22,15 @@
 Asidescrolling_actionCharacter::Asidescrolling_actionCharacter()
 {
 
-	// Set size for collision capsule
+	// et size for collision capsule
 	GetCapsuleComponent()->InitCapsuleSize(42.f, 96.0f);
 
-	// Don't rotate when the controller rotates.
+	// don't rotate when the controller rotates.
 	bUseControllerRotationPitch = false;
 	bUseControllerRotationYaw = false;
 	bUseControllerRotationRoll = false;
 
-	// Create a camera boom attached to the root (capsule)
+	//camera boom attached to the root (capsule)
 	CameraBoom = CreateDefaultSubobject<USpringArmComponent>(TEXT("CameraBoom"));
 	CameraBoom->SetupAttachment(RootComponent);
 	CameraBoom->bAbsoluteRotation = true; // Rotation of the character should not affect rotation of boom
@@ -39,12 +39,12 @@ Asidescrolling_actionCharacter::Asidescrolling_actionCharacter()
 	CameraBoom->SocketOffset = FVector(0.f,0.f,75.f);
 	CameraBoom->RelativeRotation = FRotator(0.f,180.f,0.f);
 
-	// Create a camera and attach to boom
+	//create a camera and attach to boom
 	SideViewCameraComponent = CreateDefaultSubobject<UCameraComponent>(TEXT("SideViewCamera"));
 	SideViewCameraComponent->SetupAttachment(CameraBoom, USpringArmComponent::SocketName);
 	SideViewCameraComponent->bUsePawnControlRotation = false; // We don't want the controller rotating the camera
 
-	// Configure character movement
+	//character movement
 	GetCharacterMovement()->bOrientRotationToMovement = true; // Face in the direction we are moving..
 	GetCharacterMovement()->RotationRate = FRotator(0.0f, 720.0f, 0.0f); // ...at this rotation rate
 	GetCharacterMovement()->GravityScale = 2.f;
@@ -76,26 +76,28 @@ void Asidescrolling_actionCharacter::SetupPlayerInputComponent(class UInputCompo
 	PlayerInputComponent->BindAction("Sprint", IE_Released, this, &Asidescrolling_actionCharacter::sprintoff);
 }
 
-//look mechanic
+//move mechanic
 void Asidescrolling_actionCharacter::MoveRight(float Value)
 {
 	// add movement in that direction
 	AddMovementInput(FVector(0.f,-1.f,0.f), Value);
 }
 
-//srpint mechanic
+//sprint pressed
 void Asidescrolling_actionCharacter::sprinton()
 {
-	//on shift press, increase walk speed.
+	//check if the player is on ground
 	if (GetCharacterMovement()->IsWalking() == true)
 	{
+		//apply faster movement
 		GetCharacterMovement()->MaxWalkSpeed = 1200.f;
 	}
 }
 
+//sprint release
 void Asidescrolling_actionCharacter::sprintoff()
 {
-	//on shift release decrease max walk speed
+	//apply decreased movement
 	GetCharacterMovement()->MaxWalkSpeed = 600.f;
 }
 
@@ -107,19 +109,22 @@ void Asidescrolling_actionCharacter::doublejump()
 	//if on the ground, allow jump()
 	if (GetCharacterMovement()->IsWalking() == true)
 	{
+		//ue4 jump 
 		Jump();
+		//set allowdoublejump to true
 		allowdoublejump = true;
 	}
-	//if off the ground and double jump bool conditions are met, allow a second impulse which acts as a second jump
-	if (GetCharacterMovement()->IsWalking() == false && allowdoublejump == true)
-	{
-		GetCharacterMovement()->AddImpulse(GetCapsuleComponent()->GetUpVector() * 1000, true);
-		allowdoublejump = false;
-	}
+		//if off the ground and double jump bool conditions are met, allow a second impulse which acts as a second jump
+		if (GetCharacterMovement()->IsWalking() == false && allowdoublejump == true)
+		{
+			//apply impulse in the up vector from the characters location to act as a second jump
+			GetCharacterMovement()->AddImpulse(GetCapsuleComponent()->GetUpVector() * 1000, true);
+			//set double jump bool to false
+			allowdoublejump = false;
+		}
 }
 
-
-//beinplay
+//Begin Play
 void Asidescrolling_actionCharacter::BeginPlay()
 {
 	Super::BeginPlay();
@@ -139,7 +144,6 @@ void Asidescrolling_actionCharacter::TouchStopped(const ETouchIndex::Type Finger
 {	
 	StopJumping();
 }
-
 
 //eventick
 void Asidescrolling_actionCharacter::Tick(float a) {
