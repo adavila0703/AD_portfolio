@@ -11,6 +11,7 @@
 #include "GenericPlatform/GenericPlatformProcess.h"
 #include "Engine/World.h"
 #include "Runtime/Engine/Classes/Components/ActorComponent.h"
+#include "projectile.h"
 
 
 //allows me to use print() for debuging
@@ -18,6 +19,8 @@
 
 Asidescrolling_actionCharacter::Asidescrolling_actionCharacter()
 {
+
+
 
 	// et size for collision capsule
 	GetCapsuleComponent()->InitCapsuleSize(42.f, 96.0f);
@@ -64,13 +67,19 @@ void Asidescrolling_actionCharacter::SetupPlayerInputComponent(class UInputCompo
 	/* basic ue4 jump settings *turned off*.
 	PlayerInputComponent->BindAction("Jump", IE_Pressed, this, &ACharacter::Jump);
 	PlayerInputComponent->BindAction("Jump", IE_Released, this, &ACharacter::StopJumping);
+	PlayerInputComponent->BindTouch(IE_Released, this, &Asidescrolling_actionCharacter::TouchStopped);
 	*/
 
+	//bind for movement
 	PlayerInputComponent->BindAxis("MoveRight", this, &Asidescrolling_actionCharacter::MoveRight);
-	PlayerInputComponent->BindTouch(IE_Released, this, &Asidescrolling_actionCharacter::TouchStopped);
+	//bind for jump
 	PlayerInputComponent->BindAction("Jump", IE_Pressed, this, &Asidescrolling_actionCharacter::doublejump);
+	//bind for sprint press
 	PlayerInputComponent->BindAction("Sprint", IE_Pressed, this, &Asidescrolling_actionCharacter::sprinton);
+	//bind for sprint release
 	PlayerInputComponent->BindAction("Sprint", IE_Released, this, &Asidescrolling_actionCharacter::sprintoff);
+	//bind for attack
+	PlayerInputComponent->BindAction("attack1", IE_Pressed, this, &Asidescrolling_actionCharacter::attack);
 }
 
 //move mechanic
@@ -87,7 +96,7 @@ void Asidescrolling_actionCharacter::sprinton()
 	if (GetCharacterMovement()->IsWalking() == true)
 	{
 		//apply faster movement
-		GetCharacterMovement()->MaxWalkSpeed = 1200.f;
+		GetCharacterMovement()->MaxWalkSpeed = 1500.f;
 	}
 }
 
@@ -99,7 +108,9 @@ void Asidescrolling_actionCharacter::sprintoff()
 }
 
 //doublejump bool initialization
-bool allowdoublejump = NULL;
+bool allowdoublejump = NULL, diagonaljump = NULL;
+FVector diagonalvector;
+FVector upvectorrotation = diagonalvector.RotateAngleAxis(80, FVector(0, 0, 1));
 
 void Asidescrolling_actionCharacter::doublejump()
 {
@@ -118,7 +129,13 @@ void Asidescrolling_actionCharacter::doublejump()
 			GetCharacterMovement()->AddImpulse(GetCapsuleComponent()->GetUpVector() * 1000, true);
 			//set double jump bool to false
 			allowdoublejump = false;
+			diagonaljump = true;
 		}
+			if (GetCharacterMovement()->IsWalking() == false && diagonaljump == true)
+			{
+				GetCharacterMovement()->AddImpulse(GetCapsuleComponent()->GetUpVector()* upvectorrotation * 2500, true);
+				diagonaljump = false;
+			}
 }
 
 //Begin Play
@@ -133,7 +150,8 @@ void Asidescrolling_actionCharacter::BeginPlay()
 
 void Asidescrolling_actionCharacter::attack()
 {
-
+	this->GetWorld()->SpawnActor<Aprojectile>();
+	print("attacking...");
 }
 
 //ue4 function to get jump end
