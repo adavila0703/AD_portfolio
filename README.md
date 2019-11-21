@@ -1,6 +1,10 @@
 # AD_portfolio info
 Below you will find a list of the content inside this repository.
 
+# Side Scrolling Action
+Example of sprint/double jump mechanic.
+![](pictures/sprint-doublejump.gif)
+
 # EE Calculator
 This small command prompt program is a house for all Electrical Engineering and physics formulas. You will be able to calculate everything from Ohm's law to complex nodal analysis on a circuit board.
 
