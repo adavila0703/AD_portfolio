@@ -1,3 +1,0 @@
-C:\Users\Angel\Documents\Unreal Projects\AD_portfolio\sidescrolling_action\Source\sidescrolling_action\sidescrolling_action.Build.cs
-C:\Users\Angel\Documents\Unreal Projects\AD_portfolio\sidescrolling_action\Source\sidescrolling_action.Target.cs
-C:\Users\Angel\Documents\Unreal Projects\AD_portfolio\sidescrolling_action\Source\sidescrolling_actionEditor.Target.cs
