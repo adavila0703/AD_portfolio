@@ -68,7 +68,7 @@ There is a lot to improve with this system, but it is a quick and cheap solution
 # Work Search Function
 Language: C++
 
-Here is a search function I built to help me locate common files that I used on a regular basis and it wasn't possible to bookmark these specific files as there were more than 300 of them. 
+A work I quickly developed this small search function to help organize and locate common files that were used on a regular basis. There were more than 300 files on this small database, which would have been too much to bookmark.
 
 When you open the software you are prompted with two menus. You then put the product number into the input and which specific files you're looking for. Once the file is located, it will open your file. 
 
