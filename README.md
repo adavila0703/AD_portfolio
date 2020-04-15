@@ -75,9 +75,9 @@ There is a lot to improve with this system, but it is a quick and cheap solution
 
 **Engine:** Godot
 
-**Language:** GDscript
+**Language:** GDScript
 
-
+This is Disk Arena, a game which I had started developing on the Godot Engine. I built the player movement, shooting mechanics, set up P2P multiplayer and had started testing with friends. I put this project aside as I decided to use the Unreal Engine for the game instead.
 
 ![](pictures/da-clip.gif)
 
