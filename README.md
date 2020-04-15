@@ -7,14 +7,20 @@
 6. Angels Course Project
 
 # Side Scrolling Action
-Language: C++/UE4 Blueprints
+
+**Engine:** UE4
+
+**Language:** C++/UE4 Blueprints
 
 Here is my example of a sprint and double jump mechanic for a side-scroller in UE4. The foliage and character are free uassests from the UE4 marketplace.
 
 ![](pictures/sprint-doublejump.gif)
 
 # UE4 Netcode With BP's
-Language: UE4 Blueprints
+
+**Engine:** UE4
+
+**Language:** UE4 Blueprints
 
 I created a projectile prediction system with UE4 blueprints, in order to help with hit registration on P2P multiplayer in UE4. Below you will see a 200 ping simulation with the prediction system on and off. 
 
@@ -65,17 +71,27 @@ In order to avoid allowing the client to see both projectiles we make sure this 
 
 There is a lot to improve with this system, but it is a quick and cheap solution to UE4's basic networking.
 
-# Work Search Function
-Language: C++
+# Disk Arena
 
-A work I quickly developed this small search function to help organize and locate common files that were used on a regular basis. There were more than 300 files on this small database, which would have been too much to bookmark.
+**Engine:** Godot
+
+**Language:** GDscript
+
+
+
+![](pictures/da-clip.gif)
+
+# Work Search Function
+**Language:** C++
+
+I quickly developed this small search function to help locate common files that were used on a regular basis. There were more than 300 files on this small database, which would have been too much to bookmark.
 
 When you open the software you are prompted with two menus. You then put the product number into the input and which specific files you're looking for. Once the file is located, it will open your file. 
 
 ![](pictures/searchfunction.PNG)
 
 # EE Calculator
-Language: C++
+**Language:** C++
 
 This small command prompt program is a house for all Electrical Engineering and physics formulas. You will be able to calculate everything from Ohm's law to complex nodal analysis on a circuit board.
 
@@ -108,12 +124,12 @@ Still needs work on calculating voltage at a specific time, but when its done yo
 
 
 # Door Game
-Language: C++
+**Language:** C++
 
 This is a fun little game where you have to choose a door, fight enemies and try to get passed 4 doors.
 
 
 # Angels Course Project
-Language: C++
+**Language:** C++
 
 For one of my CS course projects, I started working on an inventory system that allows you to only login if your currently have an account. This reads and writes data, but object oriented area needs work.
