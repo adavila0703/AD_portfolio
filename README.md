@@ -1,10 +1,11 @@
 ﻿# Table of Contents
 1. Side Scrolling Action
 2. UE4 Netcode With BP's
-3. Work Search Function
-4. EE Calculator
-5. Door Game
-6. Angels Course Project
+3. Disk Arena
+4. Work Search Function
+5. EE Calculator
+6. Door Game
+7. Angels Course Project
 
 # Side Scrolling Action
 
